@@ -1,0 +1,19 @@
+{
+  "name": "linkplease-instagram-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reliable comment-to-DM automation for the LinkPlease assignment.",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
