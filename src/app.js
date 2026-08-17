@@ -21,6 +21,9 @@ function createApp({ eventService, ruleRepository, jobRepository, apiKey }) {
     "/webhook",
     express.raw({ type: "application/json", limit: "1mb" }),
     (request, response) => {
+      console.log("WEBHOOK RECEIVED");
+      console.log("Signature:", request.get("X-PseudoGram-Signature"));
+      console.log("Body:", request.body.toString("utf8"));
       if (
         !signatureIsValid(
           request.body,
