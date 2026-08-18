@@ -35,7 +35,7 @@ The design has two durable queues in SQLite: an incoming-event inbox saves webho
 Install Node.js 20+ and dependencies, then configure your PseudoGram key:
 
 ```powershell
-cd C:\Users\malla\Downloads\balaji_linkplease
+cd C:\Users\balaj\Downloads\balaji_linkplease
 Copy-Item .env.example .env
 # Edit .env and add PSEUDOGRAM_API_KEY
 npm start
